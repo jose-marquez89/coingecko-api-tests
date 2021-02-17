@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # large json files
-coins_list.json
+*.json
