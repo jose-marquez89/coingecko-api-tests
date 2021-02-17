@@ -9,5 +9,5 @@ if __name__ == '__main__':
     res = requests.get(coin_list)
     coin_details = res.json()
 
-    with open("coins_list.json", "w") as cl:
+    with open("notebooks/coins_list.json", "w") as cl:
         json.dump(coin_details, cl)
