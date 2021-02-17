@@ -11,7 +11,7 @@ if __name__ == '__main__':
         res = requests.get(url)
         ticker_details = res.json()
 
-        fname = "{}.json".format(currency)
+        fname = "notebooks/{}.json".format(currency)
 
         with open(fname, "w") as tdata:
             json.dump(ticker_details, tdata)
